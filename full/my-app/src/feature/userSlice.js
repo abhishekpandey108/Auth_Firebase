@@ -3,6 +3,7 @@ import {createSlice,createAsyncThunk} from '@reduxjs/toolkit';
 import { firebaseRegister, firebaseLogin, firebaseLogout } from './userService';
 const initialState = {
     user: null,
+    email:'',
     isLoading: true,
     isError:false,
     isVerified: false,
@@ -79,6 +80,7 @@ export const userSlice = createSlice({
             state.isLoading = false;
             state.isVerified = true;
             state.user = action.payload;
+            state.email = action.payload.user.email;
         })
         .addCase(logout.pending,(state)=>{
             state.isLoading = true;
