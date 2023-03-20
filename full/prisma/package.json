@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.21"
+  },
+  "name": "prisma",
+  "version": "1.0.0",
+  "description": "This is just for practice",
+  "main": "app.js",
+  "devDependencies": {
+    "prisma": "^4.11.0"
+  },
+  "scripts": {
+    "test": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

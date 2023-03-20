@@ -1,0 +1,30 @@
+GET http://localhost:4000/api/products
+
+###
+
+GET http://localhost:4000/api/products/3
+
+###
+
+POST http://localhost:4000/api/products
+Content-Type: application/json
+
+{
+    "name":"ipad 2",
+    "price":65000,
+    "categoryId":2
+}
+
+###
+
+DELETE http://localhost:4000/api/products/4
+
+###
+
+PATCH http://localhost:4000/api/products/6
+Content-Type: application/json
+
+{
+    "name":"iphone x",
+    "categoryId":1,
+}
